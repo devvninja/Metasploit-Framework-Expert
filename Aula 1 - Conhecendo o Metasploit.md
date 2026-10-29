@@ -1,45 +1,55 @@
-```
-AULA 1 - CONHECENDO METASPLOIT
+# Aula 1 - Conhecendo Metasploit
 
-msfconsole
-banner
+### 
 
-cd /usr/share/metasploit-framework
-cd modules/auxiliary/scanner/portscan
+`msfconsole` 
+Abrindo o Metasploit
 
-search
-para procurar um modulo
+`banner`
+Banner
 
-search -h
-manual do search
+### Navegando entre os diretórios do Metasploit
 
-search cve:2024 windows
-procura cve de 2024 do windows
+`cd /usr/share/metasploit-framework`
 
-search exploits windows
-procura exploits do windows
+`cd modules/auxiliary/scanner/portscan`
 
-search type:auxiliary scanner tcp
-procura modulo auxiliar de scan TCP
+### Pesquisa de módulos
 
-use
-para usar um modulo
+`search`
+Procura módulos disponíveis.
 
-use auxiliary/scanner/portscan/tcp
-para usar o auxiliar de varredura de portas TCP
+`search -h`
+Manual do search.
 
-show options
-mostra as configurações do modulo
+`search cve:2024 windows`
+Procura cve de 2024 do Windows.
 
-set RHOSTS <IP>
-set RHOSTS 192.168.75.129
+`search exploits windows`
+Pesquisa exploits relacionados ao Windows.
 
-run ou exploit
-para executar o modulo
+`search type:auxiliary scanner tcp`
+Procura um auxiliar de scanear protocolos tcp
 
-back
-para sair do modulo atual
+### Utilização de módulos
 
-portscan
-varredura de portas
-```
+`use`
+Para usar um módulo.
+
+`use auxiliary/scanner/portscan/tcp`
+Usa o auxiliar de scaneia portas TCP.
+
+`show options`
+Exibe as opções de configurações do módulo em uso que será executado.
+
+`set RHOSTS <IP>`
+Define o IP do alvo no módulo utilizado.
+
+`run` ou `exploit`
+Executa o módulo selecionado.
+
+`back`
+Sai do módulo atual.
+
+`portscan`
+Scaneia portas
