@@ -18,6 +18,8 @@ Banner
 
 `cd modules/auxiliary/scanner/portscan`
 
+Os resources do metasplouit são escritos em Ruby, como o portscan.
+
 ### Pesquisa de módulos
 
 ```bash
