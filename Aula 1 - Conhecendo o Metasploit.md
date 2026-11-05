@@ -12,7 +12,7 @@ Banner
 ```
 
 
-### Navegando entre os diretórios do Metasploit
+### Diretórios do Metasploit onde tem Modules, Exploits, Auxiliary, Payloads, Encoders etc.
 
 `cd /usr/share/metasploit-framework`
 
